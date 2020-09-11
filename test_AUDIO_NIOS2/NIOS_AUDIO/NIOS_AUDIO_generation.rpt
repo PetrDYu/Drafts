@@ -1,0 +1,161 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\petry\OneDrive\projects_quartus\test_AUDIO_NIOS2\NIOS_AUDIO.qsys --synthesis=VERILOG --output-directory=C:\Users\petry\OneDrive\projects_quartus\test_AUDIO_NIOS2\NIOS_AUDIO\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading test_AUDIO_NIOS2/NIOS_AUDIO.qsys
+Progress: Reading input file
+Progress: Adding PLL_0 [AUDIO_PLL 1.0]
+Progress: Reading input file
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 15.1]
+Progress: Parameterizing module audio_pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module PLL_0
+Progress: Adding audio_0 [altera_up_avalon_audio 15.1]
+Progress: Parameterizing module audio_0
+Progress: Adding clk_0 [clock_source 16.0]
+Progress: Parameterizing module clk_0
+Progress: Adding i2c_scl [altera_avalon_pio 16.0]
+Progress: Parameterizing module i2c_scl
+Progress: Adding i2c_sda [altera_avalon_pio 16.0]
+Progress: Parameterizing module i2c_sda
+Progress: Adding i_out [altera_avalon_pio 16.0]
+Progress: Parameterizing module i_out
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.0]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 16.0]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.0]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pll_out [altera_pll 16.0]
+Progress: Parameterizing module pll_out
+Progress: Adding sin_in [altera_avalon_pio 16.0]
+Progress: Parameterizing module sin_in
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 16.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding timer_0 [altera_avalon_timer 16.0]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: NIOS_AUDIO.i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: NIOS_AUDIO.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: NIOS_AUDIO.pll_out: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: NIOS_AUDIO.pll_out: Able to implement PLL with user settings
+Info: NIOS_AUDIO.sin_in: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: NIOS_AUDIO.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: NIOS_AUDIO.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: NIOS_AUDIO: Generating NIOS_AUDIO "NIOS_AUDIO" for QUARTUS_SYNTH
+Info: PLL_0: "NIOS_AUDIO" instantiated AUDIO_PLL "PLL_0"
+Info: audio_0: Starting Generation of Audio Controller
+Info: audio_0: "NIOS_AUDIO" instantiated altera_up_avalon_audio "audio_0"
+Info: i2c_scl: Starting RTL generation for module 'NIOS_AUDIO_i2c_scl'
+Info: i2c_scl:   Generation command is [exec C:/altera/16.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/16.0/quartus/bin64/perl/lib -I C:/altera/16.0/quartus/sopc_builder/bin/europa -I C:/altera/16.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/16.0/quartus/sopc_builder/bin -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NIOS_AUDIO_i2c_scl --dir=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0002_i2c_scl_gen/ --quartus_dir=C:/altera/16.0/quartus --verilog --config=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0002_i2c_scl_gen//NIOS_AUDIO_i2c_scl_component_configuration.pl  --do_build_sim=0  ]
+Info: i2c_scl: Done RTL generation for module 'NIOS_AUDIO_i2c_scl'
+Info: i2c_scl: "NIOS_AUDIO" instantiated altera_avalon_pio "i2c_scl"
+Info: i2c_sda: Starting RTL generation for module 'NIOS_AUDIO_i2c_sda'
+Info: i2c_sda:   Generation command is [exec C:/altera/16.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/16.0/quartus/bin64/perl/lib -I C:/altera/16.0/quartus/sopc_builder/bin/europa -I C:/altera/16.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/16.0/quartus/sopc_builder/bin -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NIOS_AUDIO_i2c_sda --dir=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0003_i2c_sda_gen/ --quartus_dir=C:/altera/16.0/quartus --verilog --config=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0003_i2c_sda_gen//NIOS_AUDIO_i2c_sda_component_configuration.pl  --do_build_sim=0  ]
+Info: i2c_sda: Done RTL generation for module 'NIOS_AUDIO_i2c_sda'
+Info: i2c_sda: "NIOS_AUDIO" instantiated altera_avalon_pio "i2c_sda"
+Info: i_out: Starting RTL generation for module 'NIOS_AUDIO_i_out'
+Info: i_out:   Generation command is [exec C:/altera/16.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/16.0/quartus/bin64/perl/lib -I C:/altera/16.0/quartus/sopc_builder/bin/europa -I C:/altera/16.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/16.0/quartus/sopc_builder/bin -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NIOS_AUDIO_i_out --dir=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0004_i_out_gen/ --quartus_dir=C:/altera/16.0/quartus --verilog --config=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0004_i_out_gen//NIOS_AUDIO_i_out_component_configuration.pl  --do_build_sim=0  ]
+Info: i_out: Done RTL generation for module 'NIOS_AUDIO_i_out'
+Info: i_out: "NIOS_AUDIO" instantiated altera_avalon_pio "i_out"
+Info: jtag_uart_0: Starting RTL generation for module 'NIOS_AUDIO_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/16.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/16.0/quartus/bin64/perl/lib -I C:/altera/16.0/quartus/sopc_builder/bin/europa -I C:/altera/16.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/16.0/quartus/sopc_builder/bin -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=NIOS_AUDIO_jtag_uart_0 --dir=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0005_jtag_uart_0_gen/ --quartus_dir=C:/altera/16.0/quartus --verilog --config=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0005_jtag_uart_0_gen//NIOS_AUDIO_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'NIOS_AUDIO_jtag_uart_0'
+Info: jtag_uart_0: "NIOS_AUDIO" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: mm_clock_crossing_bridge_0: "NIOS_AUDIO" instantiated altera_avalon_mm_clock_crossing_bridge "mm_clock_crossing_bridge_0"
+Info: nios2_gen2_0: "NIOS_AUDIO" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'NIOS_AUDIO_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/16.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/16.0/quartus/bin64/perl/lib -I C:/altera/16.0/quartus/sopc_builder/bin/europa -I C:/altera/16.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/16.0/quartus/sopc_builder/bin -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=NIOS_AUDIO_onchip_memory2_0 --dir=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0007_onchip_memory2_0_gen/ --quartus_dir=C:/altera/16.0/quartus --verilog --config=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0007_onchip_memory2_0_gen//NIOS_AUDIO_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'NIOS_AUDIO_onchip_memory2_0'
+Info: onchip_memory2_0: "NIOS_AUDIO" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: pll_out: "NIOS_AUDIO" instantiated altera_pll "pll_out"
+Info: sin_in: Starting RTL generation for module 'NIOS_AUDIO_sin_in'
+Info: sin_in:   Generation command is [exec C:/altera/16.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/16.0/quartus/bin64/perl/lib -I C:/altera/16.0/quartus/sopc_builder/bin/europa -I C:/altera/16.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/16.0/quartus/sopc_builder/bin -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NIOS_AUDIO_sin_in --dir=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0009_sin_in_gen/ --quartus_dir=C:/altera/16.0/quartus --verilog --config=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0009_sin_in_gen//NIOS_AUDIO_sin_in_component_configuration.pl  --do_build_sim=0  ]
+Info: sin_in: Done RTL generation for module 'NIOS_AUDIO_sin_in'
+Info: sin_in: "NIOS_AUDIO" instantiated altera_avalon_pio "sin_in"
+Info: sysid_qsys_0: "NIOS_AUDIO" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: timer_0: Starting RTL generation for module 'NIOS_AUDIO_timer_0'
+Info: timer_0:   Generation command is [exec C:/altera/16.0/quartus/bin64//perl/bin/perl.exe -I C:/altera/16.0/quartus/bin64//perl/lib -I C:/altera/16.0/quartus/sopc_builder/bin/europa -I C:/altera/16.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/16.0/quartus/sopc_builder/bin -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=NIOS_AUDIO_timer_0 --dir=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0011_timer_0_gen/ --quartus_dir=C:/altera/16.0/quartus --verilog --config=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0011_timer_0_gen//NIOS_AUDIO_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'NIOS_AUDIO_timer_0'
+Info: timer_0: "NIOS_AUDIO" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "NIOS_AUDIO" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "NIOS_AUDIO" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: irq_mapper: "NIOS_AUDIO" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "NIOS_AUDIO" instantiated altera_reset_controller "rst_controller"
+Info: audio_pll_0: "PLL_0" instantiated altera_up_avalon_audio_pll "audio_pll_0"
+Info: cpu: Starting RTL generation for module 'NIOS_AUDIO_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec C:/altera/16.0/quartus/bin64//eperlcmd.exe -I C:/altera/16.0/quartus/bin64//perl/lib -I C:/altera/16.0/quartus/sopc_builder/bin/europa -I C:/altera/16.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/16.0/quartus/sopc_builder/bin -I C:/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=NIOS_AUDIO_nios2_gen2_0_cpu --dir=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0014_cpu_gen/ --quartus_bindir=C:/altera/16.0/quartus/bin64/ --verilog --config=C:/Users/petry/AppData/Local/Temp/alt8370_3409107310258946172.dir/0014_cpu_gen//NIOS_AUDIO_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2020.04.18 23:04:10 (*) Starting Nios II generation
+Info: cpu: # 2020.04.18 23:04:10 (*)   Checking for plaintext license.
+Info: cpu: # 2020.04.18 23:04:11 (*)   Plaintext license not found.
+Info: cpu: # 2020.04.18 23:04:11 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2020.04.18 23:04:12 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2020.04.18 23:04:12 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2020.04.18 23:04:12 (*)   Creating all objects for CPU
+Info: cpu: # 2020.04.18 23:04:12 (*)     Testbench
+Info: cpu: # 2020.04.18 23:04:13 (*)     Instruction decoding
+Info: cpu: # 2020.04.18 23:04:13 (*)       Instruction fields
+Info: cpu: # 2020.04.18 23:04:13 (*)       Instruction decodes
+Info: cpu: # 2020.04.18 23:04:14 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2020.04.18 23:04:15 (*)       Instruction controls
+Info: cpu: # 2020.04.18 23:04:15 (*)     Pipeline frontend
+Info: cpu: # 2020.04.18 23:04:15 (*)     Pipeline backend
+Info: cpu: # 2020.04.18 23:04:19 (*)   Generating RTL from CPU objects
+Info: cpu: # 2020.04.18 23:04:22 (*)   Creating encrypted RTL
+Info: cpu: # 2020.04.18 23:04:23 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'NIOS_AUDIO_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: audio_0_avalon_audio_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "audio_0_avalon_audio_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: audio_0_avalon_audio_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "audio_0_avalon_audio_slave_agent"
+Info: audio_0_avalon_audio_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "audio_0_avalon_audio_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: nios2_gen2_0_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_gen2_0_data_master_limiter"
+Info: Reusing file C:/Users/petry/OneDrive/projects_quartus/test_AUDIO_NIOS2/NIOS_AUDIO/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/petry/OneDrive/projects_quartus/test_AUDIO_NIOS2/NIOS_AUDIO/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/petry/OneDrive/projects_quartus/test_AUDIO_NIOS2/NIOS_AUDIO/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/petry/OneDrive/projects_quartus/test_AUDIO_NIOS2/NIOS_AUDIO/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/petry/OneDrive/projects_quartus/test_AUDIO_NIOS2/NIOS_AUDIO/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/petry/OneDrive/projects_quartus/test_AUDIO_NIOS2/NIOS_AUDIO/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: audio_pll: "audio_pll_0" instantiated altera_pll "audio_pll"
+Info: reset_from_locked: "audio_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: NIOS_AUDIO: Done "NIOS_AUDIO" with 48 modules, 79 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

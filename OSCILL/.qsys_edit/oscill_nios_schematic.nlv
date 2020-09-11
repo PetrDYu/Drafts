@@ -1,0 +1,58 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst oscill_nios.sysid_qsys -pg 1 -lvl 7 -y 950
+preplace inst oscill_nios.pio_sw -pg 1 -lvl 7 -y 1330
+preplace inst oscill_nios.onchip_memory -pg 1 -lvl 7 -y 470
+preplace inst oscill_nios.clk -pg 1 -lvl 1 -y 490
+preplace inst oscill_nios.vga_contr -pg 1 -lvl 7 -y 850
+preplace inst oscill_nios.niosII.reset_bridge -pg 1
+preplace inst oscill_nios.niosII -pg 1 -lvl 2 -y 360
+preplace inst oscill_nios.audio_transf -pg 1 -lvl 7 -y 250
+preplace inst oscill_nios.video_dual_clock_buffer -pg 1 -lvl 6 -y 430
+preplace inst oscill_nios.av_config -pg 1 -lvl 7 -y 30
+preplace inst oscill_nios -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst oscill_nios.pio_hex_0 -pg 1 -lvl 7 -y 130
+preplace inst oscill_nios.pio_hex_1 -pg 1 -lvl 7 -y 650
+preplace inst oscill_nios.audio_pll.reset_from_locked -pg 1
+preplace inst oscill_nios.video_scaler_0 -pg 1 -lvl 5 -y 410
+preplace inst oscill_nios.pll_vga -pg 1 -lvl 5 -y 580
+preplace inst oscill_nios.pio_hex_2 -pg 1 -lvl 7 -y 550
+preplace inst oscill_nios.pio_key -pg 1 -lvl 7 -y 1130
+preplace inst oscill_nios.pio_hex_3 -pg 1 -lvl 7 -y 750
+preplace inst oscill_nios.niosII.clock_bridge -pg 1
+preplace inst oscill_nios.pio_led -pg 1 -lvl 7 -y 1230
+preplace inst oscill_nios.pio_hex_4 -pg 1 -lvl 7 -y 1430
+preplace inst oscill_nios.niosII.cpu -pg 1
+preplace inst oscill_nios.jtag_uart -pg 1 -lvl 7 -y 370
+preplace inst oscill_nios.pio_hex_5 -pg 1 -lvl 7 -y 1030
+preplace inst oscill_nios.audio_pll.audio_pll -pg 1
+preplace inst oscill_nios.video_rgb_resampler_0 -pg 1 -lvl 4 -y 460
+preplace inst oscill_nios.video_pixel_buffer_dma_0 -pg 1 -lvl 3 -y 500
+preplace inst oscill_nios.audio_pll -pg 1 -lvl 6 -y 270
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)pio_hex_3.external_connection,(SLAVE)oscill_nios.pio_hex_3_external_connection) 1 0 7 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ
+preplace netloc FAN_OUT<net_container>oscill_nios</net_container>(SLAVE)vga_contr.clk,(MASTER)pll_vga.outclk0,(SLAVE)video_dual_clock_buffer.clock_stream_out) 1 5 2 2010 660 2550
+preplace netloc POINT_TO_POINT<net_container>oscill_nios</net_container>(SLAVE)video_scaler_0.avalon_scaler_sink,(MASTER)video_rgb_resampler_0.avalon_rgb_source) 1 4 1 1570
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(MASTER)oscill_nios.audio_clk,(MASTER)audio_pll.audio_clk) 1 6 2 NJ 240 NJ
+preplace netloc INTERCONNECT<net_container>oscill_nios</net_container>(SLAVE)pio_hex_5.s1,(SLAVE)onchip_memory.s1,(MASTER)video_pixel_buffer_dma_0.avalon_pixel_dma_master,(SLAVE)pio_hex_2.s1,(MASTER)niosII.instruction_master,(SLAVE)pio_sw.s1,(SLAVE)av_config.avalon_av_config_slave,(SLAVE)pio_key.s1,(SLAVE)audio_transf.avalon_audio_slave,(SLAVE)niosII.debug_mem_slave,(SLAVE)pio_hex_4.s1,(SLAVE)pio_hex_0.s1,(SLAVE)video_pixel_buffer_dma_0.avalon_control_slave,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)pio_led.s1,(SLAVE)pio_hex_3.s1,(MASTER)niosII.data_master,(SLAVE)pio_hex_1.s1,(SLAVE)sysid_qsys.control_slave) 1 1 6 420 320 840 590 1240 550 NJ 550 NJ 600 2630
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)pio_hex_5.external_connection,(SLAVE)oscill_nios.pio_hex_5_external_connection) 1 0 7 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ
+preplace netloc POINT_TO_POINT<net_container>oscill_nios</net_container>(MASTER)video_dual_clock_buffer.avalon_dc_buffer_source,(SLAVE)vga_contr.avalon_vga_sink) 1 6 1 2570
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)oscill_nios.pio_hex_2_external_connection,(SLAVE)pio_hex_2.external_connection) 1 0 7 NJ 650 NJ 650 NJ 650 NJ 570 NJ 570 NJ 620 NJ
+preplace netloc FAN_OUT<net_container>oscill_nios</net_container>(MASTER)niosII.irq,(SLAVE)audio_transf.interrupt,(SLAVE)jtag_uart.irq) 1 2 5 N 450 NJ 450 NJ 400 NJ 560 2550
+preplace netloc POINT_TO_POINT<net_container>oscill_nios</net_container>(MASTER)video_scaler_0.avalon_scaler_source,(SLAVE)video_dual_clock_buffer.avalon_dc_buffer_sink) 1 5 1 N
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)pio_led.external_connection,(SLAVE)oscill_nios.pio_led_external_connection) 1 0 7 NJ 1260 NJ 1260 NJ 1260 NJ 1260 NJ 1260 NJ 1260 NJ
+preplace netloc POINT_TO_POINT<net_container>oscill_nios</net_container>(SLAVE)audio_transf.reset,(MASTER)audio_pll.reset_source) 1 6 1 2650
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)pio_hex_0.external_connection,(SLAVE)oscill_nios.pio_hex_0_external_connection) 1 0 7 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ
+preplace netloc FAN_OUT<net_container>oscill_nios</net_container>(SLAVE)audio_pll.ref_reset,(SLAVE)video_rgb_resampler_0.reset,(SLAVE)video_dual_clock_buffer.reset_stream_in,(SLAVE)pio_hex_1.reset,(SLAVE)video_dual_clock_buffer.reset_stream_out,(SLAVE)pio_sw.reset,(SLAVE)pio_hex_4.reset,(SLAVE)pio_hex_3.reset,(MASTER)clk.clk_reset,(SLAVE)av_config.reset,(SLAVE)niosII.reset,(SLAVE)jtag_uart.reset,(SLAVE)pio_hex_2.reset,(SLAVE)video_pixel_buffer_dma_0.reset,(SLAVE)sysid_qsys.reset,(SLAVE)pio_hex_5.reset,(SLAVE)vga_contr.reset,(SLAVE)pll_vga.reset,(SLAVE)pio_hex_0.reset,(SLAVE)onchip_memory.reset1,(SLAVE)pio_led.reset,(SLAVE)pio_key.reset,(SLAVE)video_scaler_0.reset) 1 1 6 420 520 800 630 1300 610 1590 530 2050 640 2690
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)vga_contr.external_interface,(SLAVE)oscill_nios.vga) 1 0 7 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)audio_transf.external_interface,(SLAVE)oscill_nios.audio) 1 0 7 NJ 300 NJ 300 NJ 300 NJ 300 NJ 300 NJ 350 NJ
+preplace netloc FAN_OUT<net_container>oscill_nios</net_container>(MASTER)clk.clk,(SLAVE)pio_hex_4.clk,(SLAVE)pio_hex_1.clk,(SLAVE)onchip_memory.clk1,(SLAVE)video_dual_clock_buffer.clock_stream_in,(SLAVE)pio_led.clk,(SLAVE)av_config.clk,(SLAVE)pio_hex_5.clk,(SLAVE)pio_sw.clk,(SLAVE)jtag_uart.clk,(SLAVE)pio_key.clk,(SLAVE)sysid_qsys.clk,(SLAVE)video_scaler_0.clk,(SLAVE)video_rgb_resampler_0.clk,(SLAVE)pio_hex_2.clk,(SLAVE)niosII.clk,(SLAVE)pio_hex_3.clk,(SLAVE)pll_vga.refclk,(SLAVE)video_pixel_buffer_dma_0.clk,(SLAVE)audio_pll.ref_clk,(SLAVE)audio_transf.clk,(SLAVE)pio_hex_0.clk) 1 1 6 400 500 820 610 1280 590 1550 380 2090 580 2590
+preplace netloc POINT_TO_POINT<net_container>oscill_nios</net_container>(SLAVE)video_rgb_resampler_0.avalon_rgb_sink,(MASTER)video_pixel_buffer_dma_0.avalon_pixel_source) 1 3 1 1260
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)pio_sw.external_connection,(SLAVE)oscill_nios.pio_sw_external_connection) 1 0 7 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)pio_hex_4.external_connection,(SLAVE)oscill_nios.pio_hex_4_external_connection) 1 0 7 NJ 1460 NJ 1460 NJ 1460 NJ 1460 NJ 1460 NJ 1460 NJ
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)oscill_nios.pio_hex_1_external_connection,(SLAVE)pio_hex_1.external_connection) 1 0 7 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)clk.clk_in,(SLAVE)oscill_nios.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)oscill_nios.audio_config,(SLAVE)av_config.external_interface) 1 0 7 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)pio_key.external_connection,(SLAVE)oscill_nios.pio_key_external_connection) 1 0 7 NJ 1160 NJ 1160 NJ 1160 NJ 1160 NJ 1160 NJ 1160 NJ
+preplace netloc EXPORT<net_container>oscill_nios</net_container>(SLAVE)clk.clk_in_reset,(SLAVE)oscill_nios.reset) 1 0 1 NJ
+levelinfo -pg 1 0 190 2990
+levelinfo -hier oscill_nios 200 230 560 930 1360 1800 2270 2730 2900

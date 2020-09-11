@@ -1,0 +1,26 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\petry\OneDrive\projects_quartus\test_VGA2\testVGAsystem.qsys --synthesis=VERILOG --output-directory=C:\Users\petry\OneDrive\projects_quartus\test_VGA2\testVGAsystem\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading test_VGA2/testVGAsystem.qsys
+Progress: Reading input file
+Progress: Adding clk_1 [clock_source 16.0]
+Progress: Parameterizing module clk_1
+Progress: Adding pll_0 [altera_pll 16.0]
+Progress: Parameterizing module pll_0
+Progress: Adding video_vga_controller_0 [altera_up_avalon_video_vga_controller 15.1]
+Progress: Parameterizing module video_vga_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: testVGAsystem.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: testVGAsystem.pll_0: Able to implement PLL with user settings
+Info: testVGAsystem.video_vga_controller_0: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Warning: testVGAsystem.video_vga_controller_0.avalon_vga_sink: video_vga_controller_0.avalon_vga_sink must be connected to an Avalon-ST source
+Info: testVGAsystem: Generating testVGAsystem "testVGAsystem" for QUARTUS_SYNTH
+Info: pll_0: "testVGAsystem" instantiated altera_pll "pll_0"
+Info: video_vga_controller_0: Starting Generation of VGA Controller
+Info: video_vga_controller_0: "testVGAsystem" instantiated altera_up_avalon_video_vga_controller "video_vga_controller_0"
+Info: rst_controller: "testVGAsystem" instantiated altera_reset_controller "rst_controller"
+Info: testVGAsystem: Done "testVGAsystem" with 4 modules, 8 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

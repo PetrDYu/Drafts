@@ -1,0 +1,61 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\petry\OneDrive\projects_quartus\ADC_HPS\ADC_HPS_sys.qsys --block-symbol-file --output-directory=C:\Users\petry\OneDrive\projects_quartus\ADC_HPS\ADC_HPS_sys --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ADC_HPS/ADC_HPS_sys.qsys
+Progress: Reading input file
+Progress: Adding adc_ltc2308_0 [adc_ltc2308 1.1]
+Warning: adc_ltc2308_0: Component type adc_ltc2308 is not in the library
+Progress: Parameterizing module adc_ltc2308_0
+Progress: Adding clk_0 [clock_source 16.0]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 16.0]
+Progress: Parameterizing module hps_0
+Progress: Adding pll_0 [altera_pll 16.0]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Error: ADC_HPS_sys.adc_ltc2308_0: Component adc_ltc2308 1.1 not found or could not be instantiated
+Info: ADC_HPS_sys.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: ADC_HPS_sys.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: ADC_HPS_sys.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: ADC_HPS_sys.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: ADC_HPS_sys.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: ADC_HPS_sys.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: ADC_HPS_sys.pll_0: Able to implement PLL with user settings
+Warning: ADC_HPS_sys.hps_0: hps_0.f2h_stm_hw_events must be exported, or connected to a matching conduit.
+Error: ADC_HPS_sys.adc_ltc2308_0.slave: Data width must be of power of two and between 8 and 4096  
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\petry\OneDrive\projects_quartus\ADC_HPS\ADC_HPS_sys.qsys --synthesis=VERILOG --output-directory=C:\Users\petry\OneDrive\projects_quartus\ADC_HPS\ADC_HPS_sys\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ADC_HPS/ADC_HPS_sys.qsys
+Progress: Reading input file
+Progress: Adding adc_ltc2308_0 [adc_ltc2308 1.1]
+Warning: adc_ltc2308_0: Component type adc_ltc2308 is not in the library
+Progress: Parameterizing module adc_ltc2308_0
+Progress: Adding clk_0 [clock_source 16.0]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 16.0]
+Progress: Parameterizing module hps_0
+Progress: Adding pll_0 [altera_pll 16.0]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Error: ADC_HPS_sys.adc_ltc2308_0: Component adc_ltc2308 1.1 not found or could not be instantiated
+Info: ADC_HPS_sys.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: ADC_HPS_sys.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: ADC_HPS_sys.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: ADC_HPS_sys.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: ADC_HPS_sys.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: ADC_HPS_sys.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: ADC_HPS_sys.pll_0: Able to implement PLL with user settings
+Warning: ADC_HPS_sys.hps_0: hps_0.f2h_stm_hw_events must be exported, or connected to a matching conduit.
+Error: ADC_HPS_sys.adc_ltc2308_0.slave: Data width must be of power of two and between 8 and 4096  
+Info: ADC_HPS_sys: Generating ADC_HPS_sys "ADC_HPS_sys" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master hps_0.h2f_axi_master and slave adc_ltc2308_0.slave because the master is of type axi and the slave is of type missing.
+Info: Interconnect is inserted between master hps_0.h2f_axi_master and slave adc_ltc2308_0.slave because they have different clock source.
+Error: null

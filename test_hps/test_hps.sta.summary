@@ -1,0 +1,184 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 1.730
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : 11.810
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 3.375
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : 15.255
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.470
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.880
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|pll_write_clk_dq_write_clk'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.623
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.226
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 1.727
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 12.111
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.316
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 3.468
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : 15.494
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.815
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|pll_write_clk_dq_write_clk'
+Slack : 0.613
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.630
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.288
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 2.110
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : 14.658
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.084
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 3.727
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : 16.618
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|pll_write_clk_dq_write_clk'
+Slack : 0.883
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.891
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.101
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 2.110
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 15.253
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.168
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 3.825
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : 17.070
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.473
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|pll_write_clk_dq_write_clk'
+Slack : 0.887
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'test_hps_system:u1|test_hps_system_hps_0:hps_0|test_hps_system_hps_0_hps_io:hps_io|test_hps_system_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
+Slack : 0.894
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.066
+TNS   : 0.000
+
+------------------------------------------------------------
+Info: see the "DDR report" for DDR timing results
+------------------------------------------------------------
+------------------------------------------------------------

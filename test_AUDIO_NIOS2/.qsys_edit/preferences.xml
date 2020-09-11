@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="47" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="172" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Project,Library,Library/DSP,Library/DSP/Signal Generation" />
+ <window width="1600" height="850" x="0" y="0" />
+ <generation block_symbol_file="0" path="_PROJECT_NAME_" />
+ <hdlexample language="VERILOG" />
+</preferences>

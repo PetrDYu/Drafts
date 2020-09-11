@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sat Apr 18 23:11:15 2020
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+Revision Name : test_AUDIO_NIOS2
+Top-level Entity Name : test_AUDIO_NIOS2
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 1,793 / 32,070 ( 6 % )
+Total registers : 3065
+Total pins : 117 / 457 ( 26 % )
+Total virtual pins : 0
+Total block memory bits : 335,488 / 4,065,280 ( 8 % )
+Total RAM Blocks : 53 / 397 ( 13 % )
+Total DSP Blocks : 3 / 87 ( 3 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2 / 6 ( 33 % )
+Total DLLs : 0 / 4 ( 0 % )

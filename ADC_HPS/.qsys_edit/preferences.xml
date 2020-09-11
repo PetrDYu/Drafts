@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="159" />
+   <irq preferredWidth="47" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Interface Protocols/Transceiver PLL,Library,Project,Library/Interface Protocols,Library/University Program/Clock,Library/University Program,Project/Terasic Qsys Component,Library/Basic Functions,Library/Basic Functions/Clocks; PLLs and Resets,Library/Basic Functions/Clocks; PLLs and Resets/PLL" />
+ <window width="1600" height="850" x="0" y="0" />
+</preferences>

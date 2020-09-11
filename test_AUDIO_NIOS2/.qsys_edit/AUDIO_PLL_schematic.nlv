@@ -1,0 +1,12 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst AUDIO_PLL -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst AUDIO_PLL.audio_pll_0 -pg 1 -lvl 1 -y 50
+preplace inst AUDIO_PLL.audio_pll_0.reset_from_locked -pg 1
+preplace inst AUDIO_PLL.audio_pll_0.audio_pll -pg 1
+preplace netloc EXPORT<net_container>AUDIO_PLL</net_container>(MASTER)audio_pll_0.audio_clk,(MASTER)AUDIO_PLL.audio_pll_0_audio_clk) 1 1 1 NJ
+preplace netloc EXPORT<net_container>AUDIO_PLL</net_container>(SLAVE)AUDIO_PLL.audio_pll_0_ref_reset,(SLAVE)audio_pll_0.ref_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>AUDIO_PLL</net_container>(SLAVE)AUDIO_PLL.audio_pll_0_ref_clk,(SLAVE)audio_pll_0.ref_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>AUDIO_PLL</net_container>(MASTER)audio_pll_0.reset_source,(MASTER)AUDIO_PLL.audio_pll_0_reset_source) 1 1 1 NJ
+levelinfo -pg 1 0 140 570
+levelinfo -hier AUDIO_PLL 150 230 390

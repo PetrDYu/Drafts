@@ -1,0 +1,135 @@
+Flow report for test_AUDIO_NIOS2
+Sat Apr 18 23:12:05 2020
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Sat Apr 18 23:11:35 2020           ;
+; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
+; Revision Name                   ; test_AUDIO_NIOS2                                ;
+; Top-level Entity Name           ; test_AUDIO_NIOS2                                ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEMA5F31C6                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 1,793 / 32,070 ( 6 % )                          ;
+; Total registers                 ; 3065                                            ;
+; Total pins                      ; 117 / 457 ( 26 % )                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 335,488 / 4,065,280 ( 8 % )                     ;
+; Total DSP Blocks                ; 3 / 87 ( 3 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 2 / 6 ( 33 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/18/2020 23:05:52 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; test_AUDIO_NIOS2    ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                              ;
++-------------------------------------+--------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                                        ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+--------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 44883549519213.158724035114912                               ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                           ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; NIOS_AUDIO/synthesis/../NIOS_AUDIO.cmp                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; NIOS_AUDIO/synthesis/../../NIOS_AUDIO.qsys                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; SIN_in_bb.v                                                  ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                                                     ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                        ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                       ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                          ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                        ; --            ; --          ; --         ;
+; SLD_FILE                            ; NIOS_AUDIO/synthesis/NIOS_AUDIO.regmap                       ; --            ; --          ; --         ;
+; SLD_FILE                            ; NIOS_AUDIO/synthesis/NIOS_AUDIO.debuginfo                    ; --            ; --          ; --         ;
+; SLD_INFO                            ; QSYS_NAME NIOS_AUDIO HAS_SOPCINFO 1 GENERATION_ID 1587240208 ; --            ; NIOS_AUDIO  ; --         ;
+; SOPCINFO_FILE                       ; NIOS_AUDIO/synthesis/../../NIOS_AUDIO.sopcinfo               ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                           ; --            ; --          ; --         ;
++-------------------------------------+--------------------------------------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:01:57     ; 1.0                     ; 5474 MB             ; 00:02:17                           ;
+; Fitter                    ; 00:03:17     ; 1.1                     ; 6588 MB             ; 00:05:47                           ;
+; Assembler                 ; 00:00:15     ; 1.0                     ; 5105 MB             ; 00:00:13                           ;
+; TimeQuest Timing Analyzer ; 00:00:28     ; 1.4                     ; 5481 MB             ; 00:00:35                           ;
+; Total                     ; 00:05:57     ; --                      ; --                  ; 00:08:52                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-PPIDSJ2  ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-PPIDSJ2  ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-PPIDSJ2  ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-PPIDSJ2  ; Windows 8 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off test_AUDIO_NIOS2 -c test_AUDIO_NIOS2
+quartus_fit --read_settings_files=off --write_settings_files=off test_AUDIO_NIOS2 -c test_AUDIO_NIOS2
+quartus_asm --read_settings_files=off --write_settings_files=off test_AUDIO_NIOS2 -c test_AUDIO_NIOS2
+quartus_sta test_AUDIO_NIOS2 -c test_AUDIO_NIOS2
+
+
+

@@ -1,0 +1,15 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\petry\OneDrive\projects_quartus\FSK_mod\FPGA\Sin_space.qsys --synthesis=VERILOG --output-directory=C:\Users\petry\OneDrive\projects_quartus\FSK_mod\FPGA\Sin_space\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading FPGA/Sin_space.qsys
+Progress: Reading input file
+Progress: Adding nco_ii_0 [altera_nco_ii 16.0]
+Progress: Parameterizing module nco_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Sin_space: Generating Sin_space "Sin_space" for QUARTUS_SYNTH
+Info: nco_ii_0: "Sin_space" instantiated altera_nco_ii "nco_ii_0"
+Info: Sin_space: Done "Sin_space" with 2 modules, 14 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

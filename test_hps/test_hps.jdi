@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="8f366a49c8685dc840fd"/>
+  </project>
+  <file_info>
+    <file device="5CSEMA5F31C6" path="test_hps.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="test_hps_system:u1" name="u1">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME test_hps_system HAS_SOPCINFO 1 GENERATION_ID 1584708513"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

@@ -1,0 +1,6 @@
+DATE = "20:04:08 April 01, 2020"
+QUARTUS_VERSION = "15.1.0"
+
+# Revisions
+
+PROJECT_REVISION = "test_nios"

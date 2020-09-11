@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ADC_CONVST",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DIN",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[35]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DOUT",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

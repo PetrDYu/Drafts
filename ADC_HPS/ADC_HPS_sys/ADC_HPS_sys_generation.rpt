@@ -1,0 +1,91 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\petry\OneDrive\projects_quartus\ADC_HPS\ADC_HPS_sys.qsys --block-symbol-file --output-directory=C:\Users\petry\OneDrive\projects_quartus\ADC_HPS\ADC_HPS_sys --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ADC_HPS/ADC_HPS_sys.qsys
+Progress: Reading input file
+Progress: Adding adc_ltc2308_0 [adc_ltc2308 1.1]
+Progress: Parameterizing module adc_ltc2308_0
+Progress: Adding clk_0 [clock_source 16.0]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 16.0]
+Progress: Parameterizing module hps_0
+Progress: Adding pll_0 [altera_pll 16.0]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ADC_HPS_sys.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: ADC_HPS_sys.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: ADC_HPS_sys.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: ADC_HPS_sys.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: ADC_HPS_sys.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: ADC_HPS_sys.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: ADC_HPS_sys.pll_0: Able to implement PLL with user settings
+Warning: ADC_HPS_sys.hps_0: hps_0.f2h_stm_hw_events must be exported, or connected to a matching conduit.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\petry\OneDrive\projects_quartus\ADC_HPS\ADC_HPS_sys.qsys --synthesis=VERILOG --output-directory=C:\Users\petry\OneDrive\projects_quartus\ADC_HPS\ADC_HPS_sys\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ADC_HPS/ADC_HPS_sys.qsys
+Progress: Reading input file
+Progress: Adding adc_ltc2308_0 [adc_ltc2308 1.1]
+Progress: Parameterizing module adc_ltc2308_0
+Progress: Adding clk_0 [clock_source 16.0]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 16.0]
+Progress: Parameterizing module hps_0
+Progress: Adding pll_0 [altera_pll 16.0]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ADC_HPS_sys.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: ADC_HPS_sys.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: ADC_HPS_sys.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: ADC_HPS_sys.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: ADC_HPS_sys.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: ADC_HPS_sys.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: ADC_HPS_sys.pll_0: Able to implement PLL with user settings
+Warning: ADC_HPS_sys.hps_0: hps_0.f2h_stm_hw_events must be exported, or connected to a matching conduit.
+Info: ADC_HPS_sys: Generating ADC_HPS_sys "ADC_HPS_sys" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave adc_ltc2308_0.slave because the master is of type axi and the slave is of type avalon.
+Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: adc_ltc2308_0: "ADC_HPS_sys" instantiated adc_ltc2308 "adc_ltc2308_0"
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: hps_0: "ADC_HPS_sys" instantiated altera_hps "hps_0"
+Info: pll_0: "ADC_HPS_sys" instantiated altera_pll "pll_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "ADC_HPS_sys" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "ADC_HPS_sys" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "ADC_HPS_sys" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: adc_ltc2308_0_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "adc_ltc2308_0_slave_translator"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: adc_ltc2308_0_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "adc_ltc2308_0_slave_agent"
+Info: adc_ltc2308_0_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "adc_ltc2308_0_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: adc_ltc2308_0_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "adc_ltc2308_0_slave_burst_adapter"
+Info: Reusing file C:/Users/petry/OneDrive/projects_quartus/ADC_HPS/ADC_HPS_sys/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/petry/OneDrive/projects_quartus/ADC_HPS/ADC_HPS_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: ADC_HPS_sys: Done "ADC_HPS_sys" with 23 modules, 82 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Apr 27 03:09:56 2020
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+Revision Name : OSCILL
+Top-level Entity Name : OSCILL
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 3122
+Total pins : 136
+Total virtual pins : 0
+Total block memory bits : 2,650,752
+Total DSP Blocks : 3
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2
+Total DLLs : 0

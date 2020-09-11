@@ -1,0 +1,29 @@
+stop
+wait 5s
+reset system
+wait 5s
+
+delete breakpoints
+
+set semihosting enabled off
+
+
+loadfile "C:\Users\petry\OneDrive\projects_quartus\test_hps\software\spl_bsp\uboot-socfpga\spl\u-boot-spl" 0x0
+
+set semihosting enabled on
+
+
+tbreak spl_boot_device
+
+run
+
+wait
+
+loadfile "C:\Users\petry\OneDrive\projects_quartus\test_hps\test_hps_program\Debug\test_hps_program.axf"
+
+
+tbreak main
+
+run
+
+wait
